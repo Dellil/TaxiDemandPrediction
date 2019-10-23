@@ -1,0 +1,29 @@
+<script>
+    let map = new naver.maps.Map('map');
+    let e1 = naver.maps.Event.addListener(map, "click", function(e){
+        console.log(e);
+    });
+    //  x좌표 카운트 구한다음에 그만큼 
+    function xCount(xCoordinate){
+        const originalCoordinate = 126.75;
+        const part = xCoordinate-originalCoordinate;
+        return Math.ceil(part/0.006);
+    }
+    function yCount(xCoordinate){
+        const originalCoordinate = 37.72;
+        const part = originalCoordinate-yCoordinate;
+        return Math.ceil(part/0.004);
+    }
+    function CalculateRectangleCoordinate(xCnt, yCnt){
+        // LEFT
+        const x1 = 126.75+(xCnt-1)*0.004;
+        // RIGHT
+        const x2 = 126.75+xCnt*0.006;
+        // UP
+        const y1 = 37.72-(yCnt-1)*0.004;
+        // DOWN
+        const y2 = 37.72-yCnt*0.004;
+        
+        return [x1, x2, y1, y2];
+    }
+</script>

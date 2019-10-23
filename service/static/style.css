@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fffdf7;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    line-height: 10vh;
+
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+
+.header-menu-container {
+    width: 10%;
+    height: 10vh;
+    position: absolute;
+    text-align: center;
+    right: 0;
+}
+
+.header-menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.header-menu > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-menu-image, .header-check-box-container {
+    width: 100%;
+    height: 10vh;
+}
+
+.header-menu-image > img, .header-check-box-container > .header-check-box {
+    width: 5vh;
+    height: 5vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-menu-image > img {
+    opacity: .7;
+    z-index: 4;
+}
+
+.header-check-box {
+    opacity : 0;
+    z-index: 100;
+}
+
+.header-menu-background {
+    width: 5vh;
+    height: 5vh;
+    z-index: 3;
+    background-color: #fffdf7;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+.header-menu-information {
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+    width: 60vw;
+    height: 60vh;
+    
+    font-size: 1rem;
+    color: black;
+    z-index: -5;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 1s all;
+}
+
+input.header-check-box:checked + .header-menu-background {
+    transform: scale(300);
+}
+
+/* TURN ON WHEN COMPLETE */
+.header-check-box:checked ~ .header-menu-information {
+    opacity: 1;
+    visibility: visible;
+    z-index: 503;
+    left: 50%;
+}
+
+.header-menu-information-body {
+    width: 100%;
+    height: 50%;
+    background-color: grey;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-menu-information-color {
+    width: 20%;
+    height: 100%;
+    line-height: 30vh;
+    opacity: 0.6;
+}
+
+#map {
+    z-index: 1;
+}

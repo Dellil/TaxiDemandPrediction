@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Demands For Taxi Rides</title>
+    <link rel="stylesheet" href="/static/style.css?s=1234567a892a22214a5a5aaaa">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=MY_APPLICATION_KEY"></script>
+    
+</head>
+<body>
+<div class="header">
+    <div class="header-title">
+        PREDICTION OF THE NUMBER OF TAXI RIDES
+    </div>
+    <div class="header-menu-container">
+        <div class="header-menu">
+            <div class="header-menu-image">
+                <img src="/static/menu.svg" alt="menu">
+            </div>
+            <div class="header-check-box-container">
+                <input type="checkbox" class="header-check-box">
+                <div class="header-menu-background">
+                    &nbsp;
+                </div>
+                <div class="header-menu-information">
+                    <div class="header-menu-information-body">
+                        <div class="header-menu-information-color" style="background-color: #5d5e54;">Less than 3</div><div class="header-menu-information-color" style="background-color: #bdffd6;">Less than 6</div><div class="header-menu-information-color" style="background-color: #4aa1ff;">Less than 11</div> <div class="header-menu-information-color" style="background-color: #642bff;">Less than 21</div> <div class="header-menu-information-color" style="background-color: #ff4a4a; font-size: 0.8rem;">more than or equal to 21</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map" style="width:100%; height: 90vh;"></div>
+<script src="/static/app.js?ver=1.0.4"></script>
+</body>
+</html>
