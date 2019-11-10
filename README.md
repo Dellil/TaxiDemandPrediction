@@ -13,7 +13,7 @@ It predicts the taxi demand in Seoul, every five-minutes
   - VSC
 
 ### If you want to see my development process, can see my blog
-[My blog](https://medium.com/chan-tech/project/home)
+[My blog](https://medium.com/chan-tech/project/home) (Korean Only.)
 ***
 I captured the screen at 09/25/2019, 10:37 am  
 the size of one of the rectangles is 500m X 400m  
