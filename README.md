@@ -15,7 +15,7 @@ It predicts the taxi demand in Seoul, every five-minutes
 
 ***
 I captured the screen at 09/25/2019, 10:37 am  
-the size of one of the rectangles is 500m X 400m  
+the size of one of the rectangle is 500m X 400m  
 the color of the rectangle is the count of the people who want to ride a taxi.
 
 ![09_25_am_10_37_prediction_screen](https://user-images.githubusercontent.com/42995061/68537103-1b8c8280-03a2-11ea-92d0-0d43da34e120.png)
